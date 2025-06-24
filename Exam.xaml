@@ -1,0 +1,75 @@
+﻿<Window x:Class="Lab4_OOP.ExamForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Іспит"  Height="350" Width="600" MinHeight="350" MinWidth="600"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Closing="Window_Closing">
+
+    <Window.Resources>
+        <ControlTemplate x:Key="validationTemplate">
+            <DockPanel>
+                <Border BorderBrush="Red" BorderThickness="1">
+                    <AdornedElementPlaceholder />
+                </Border>
+            </DockPanel>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" FontSize="15" FontWeight="DemiBold" Margin="0,2">Предмет:</Label>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBox x:Name="SubjectTextBox"
+             Margin="5"
+             FontSize="15"
+             Text="{Binding Subject, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+             Validation.ErrorTemplate="{StaticResource validationTemplate}"/>
+
+            <TextBlock Foreground="Red" FontSize="12" Margin="5, 2"
+             Text="{Binding (Validation.Errors)[0].ErrorContent, ElementName=SubjectTextBox}" />
+        </StackPanel>
+
+        <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" FontSize="15" FontWeight="DemiBold" Margin="0,2">Оцінка:</Label>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBox x:Name="GradeTextBox"
+             Margin="5"
+             FontSize="15"
+             Text="{Binding Grade, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+             Validation.ErrorTemplate="{StaticResource validationTemplate}"/>
+            <TextBlock Foreground="Red" FontSize="12" Margin="5, 2"
+             Text="{Binding (Validation.Errors)[0].ErrorContent, ElementName=GradeTextBox}" />
+        </StackPanel>
+
+        <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" FontSize="15" FontWeight="DemiBold" Margin="0,2">Дата складання:</Label>
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <DatePicker x:Name="ExamDatePicker"
+             Margin="5"
+             FontSize="15"
+             SelectedDate="{Binding ExamDate, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+             Validation.ErrorTemplate="{StaticResource validationTemplate}"/>
+
+            <TextBlock Foreground="Red" FontSize="12"
+             Text="{Binding (Validation.Errors)[0].ErrorContent, ElementName=ExamDatePicker}" Margin="5, 2"/>
+        </StackPanel>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="Зберегти i закрити" Width="150" Margin="5" Padding ="5" Click="SaveButton_Click" FontSize="14" FontWeight="DemiBold"/>
+            <Button Content="Скасувати і закрити" Width="150" Margin="5" Padding ="5" Click="CancelButton_Click" FontSize="14" FontWeight="DemiBold"/>
+        </StackPanel>
+    </Grid>
+</Window>

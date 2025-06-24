@@ -1,0 +1,140 @@
+[
+  {
+    "Person": {
+      "FirstName": "Іван",
+      "LastName": "Шатських",
+      "BirthDate": "2006-09-22T00:00:00"
+    },
+    "EducationLevel": "Бакалавр",
+    "Exams": [
+      {
+        "Subject": "Англійська",
+        "Grade": 67,
+        "ExamDate": "2025-05-30T00:00:00"
+      },
+      {
+        "Subject": "Історія",
+        "Grade": 87,
+        "ExamDate": "2025-04-30T00:00:00"
+      }
+    ],
+    "FirstName": "Іван",
+    "LastName": "Шатських",
+    "BirthDate": "2006-09-22T00:00:00",
+    "ExamsSummary": "Складено іспитів: 2\nСередній бал: 77,00"
+  },
+  {
+    "Person": {
+      "FirstName": "Роман",
+      "LastName": "Дашко",
+      "BirthDate": "2005-12-29T00:00:00"
+    },
+    "EducationLevel": "Бакалавр",
+    "Exams": [
+      {
+        "Subject": "Програмування",
+        "Grade": 60,
+        "ExamDate": "2024-05-28T00:00:00"
+      },
+      {
+        "Subject": "Вишмат",
+        "Grade": 78,
+        "ExamDate": "2024-05-30T00:00:00"
+      },
+      {
+        "Subject": "Англійська",
+        "Grade": 91,
+        "ExamDate": "2024-05-31T00:00:00"
+      }
+    ],
+    "FirstName": "Роман",
+    "LastName": "Дашко",
+    "BirthDate": "2005-12-29T00:00:00",
+    "ExamsSummary": "Складено іспитів: 3\nСередній бал: 76,33"
+  },
+  {
+    "Person": {
+      "FirstName": "Сергій",
+      "LastName": "Ісаєв",
+      "BirthDate": "2002-09-24T00:00:00"
+    },
+    "EducationLevel": "Спеціаліст",
+    "Exams": [
+      {
+        "Subject": "Фізика",
+        "Grade": 70,
+        "ExamDate": "2025-05-30T00:00:00"
+      },
+      {
+        "Subject": "Бази даних",
+        "Grade": 87,
+        "ExamDate": "2025-04-30T00:00:00"
+      }
+    ],
+    "FirstName": "Сергій",
+    "LastName": "Ісаєв",
+    "BirthDate": "2002-09-24T00:00:00",
+    "ExamsSummary": "Складено іспитів: 2\nСередній бал: 78,50"
+  },
+  {
+    "Person": {
+      "FirstName": "Андрій",
+      "LastName": "Мельник",
+      "BirthDate": "2003-01-01T00:00:00"
+    },
+    "EducationLevel": "Магістр",
+    "Exams": [
+      {
+        "Subject": "Фізика",
+        "Grade": 95,
+        "ExamDate": "2025-06-02T00:00:00"
+      },
+      {
+        "Subject": "Програмування",
+        "Grade": 97,
+        "ExamDate": "2025-06-07T00:00:00"
+      }
+    ],
+    "FirstName": "Андрій",
+    "LastName": "Мельник",
+    "BirthDate": "2003-01-01T00:00:00",
+    "ExamsSummary": "Складено іспитів: 2\nСередній бал: 96,00"
+  },
+  {
+    "Person": {
+      "FirstName": "Катерина",
+      "LastName": "Бабич",
+      "BirthDate": "2005-11-18T00:00:00"
+    },
+    "EducationLevel": "Бакалавр",
+    "Exams": [
+      {
+        "Subject": "Біологія",
+        "Grade": 65,
+        "ExamDate": "2025-06-13T00:00:00"
+      },
+      {
+        "Subject": "Хімія",
+        "Grade": 95,
+        "ExamDate": "2025-06-20T00:00:00"
+      }
+    ],
+    "FirstName": "Катерина",
+    "LastName": "Бабич",
+    "BirthDate": "2005-11-18T00:00:00",
+    "ExamsSummary": "Складено іспитів: 2\nСередній бал: 80,00"
+  },
+  {
+    "Person": {
+      "FirstName": "Ігор",
+      "LastName": "Євтушевський",
+      "BirthDate": "2006-06-24T00:00:00"
+    },
+    "EducationLevel": "Бакалавр",
+    "Exams": [],
+    "FirstName": "Ігор",
+    "LastName": "Євтушевський",
+    "BirthDate": "2006-06-24T00:00:00",
+    "ExamsSummary": "Немає складених іспитів"
+  }
+]
