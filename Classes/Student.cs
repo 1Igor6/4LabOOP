@@ -18,7 +18,7 @@ namespace Lab4_OOP.Classes
     }
 
     [JsonObject(IsReference = true)]
-    public class Student :/* INotifyDataErrorInfo,*/ INotifyPropertyChanged
+    public class Student :INotifyPropertyChanged
     {
         private Person person;
         private EducationLevel educationLevel;
